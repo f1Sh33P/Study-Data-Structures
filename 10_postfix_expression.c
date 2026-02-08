@@ -65,10 +65,10 @@ int eval(Stack *s) {
   int op1, op2;
   int index = 0;
 
-  ContentType token = getToken(&symbol, &index);
+  ContentType token;
   ElemType result;
 
-  while (token != EOS) {
+  while ((token = getToken(&symbol, &index)) != EOS) {
     // #1
     if (token == NUM)
       push(s, symbol - '0');
@@ -87,9 +87,6 @@ int eval(Stack *s) {
         default:  break;
       }
     }
-
-    // #3
-    token = getToken(&symbol, &index);
   }
 
   pop(s, &result);

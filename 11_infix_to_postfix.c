@@ -4,29 +4,27 @@
 
 #define MAXSIZE 100
 
-typedef int ElemType;
-
-typedef struct {
-  ElemType *data;
-  int top;
-} Stack;
-
 typedef enum {
   LEFT_PARE, RIGHT_PARE,
   ADD, SUB, MUL, DIV, MOD,
   EOS, NUM
 } ContentType;
 
+typedef struct {
+  ContentType *data;
+  int top;
+} Stack;
+
 char expr[] = "x/(i-j)*y";
 
 Stack *initStack() {
   Stack *s = (Stack *)malloc(sizeof(Stack));
-  s->data = (ElemType *)malloc(sizeof(ElemType) * MAXSIZE);
+  s->data = (ContentType *)malloc(sizeof(ContentType) * MAXSIZE);
   s->top = -1;
   return s;
 }
 
-int push(Stack *s, ElemType e) {
+int push(Stack *s, ContentType e) {
   if (s->top == MAXSIZE - 1) {
     printf("Full\n");
     return 0;
@@ -35,7 +33,7 @@ int push(Stack *s, ElemType e) {
   return 1;
 }
 
-int pop(Stack *s, ElemType *e) {
+int pop(Stack *s, ContentType *e) {
   if (s->top == -1) {
     printf("Empty\n");
     return 0;
@@ -78,18 +76,19 @@ void postfix(Stack *s) {
   int index = 0;
   char symbol;
 
-  ElemType e;
-  ContentType token = getToken(&symbol, &index);
+  ContentType token;
+  ContentType e;
 
   push(s, EOS);
-  while (token != EOS) {
+
+  while ((token = getToken(&symbol, &index)) != EOS) {
     // #1 遇到 NUM 则直接输出
     if (token == NUM) printf("%c", symbol);
 
     // #2 遇到 RIGHT_PARE，就输出 LEFT_PARE 后的全部运算符
     else if (token == RIGHT_PARE) {
       while (s->data[s->top] != LEFT_PARE) {
-        pop(s, &e); // 实际上混用了 ElemType 和 ContentType
+        pop(s, &e);
         printToken(e);
       }
       pop(s, &e); // 丢弃 LEFT_PARE
@@ -103,9 +102,6 @@ void postfix(Stack *s) {
       }
       push(s, token);
     }
-
-    // #4
-    token = getToken(&symbol, &index);
   }
 
   // 将剩余元素依次出栈
