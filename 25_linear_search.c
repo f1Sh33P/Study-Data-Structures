@@ -1,4 +1,5 @@
 // 顺序查找
+// 时间复杂度为 O(n)
 #include <stdio.h>
 
 int search(int *data, int len, int value) {

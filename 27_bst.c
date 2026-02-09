@@ -1,6 +1,7 @@
 // binary search tree (BST) -- 二叉排序树
 // 不能有重复值
 // 查找速度快，插入删除灵活
+// 时间复杂度为 O(n)
 #include <stdio.h>
 #include <stdlib.h>
 
