@@ -6,7 +6,7 @@
 
 - **关于笨人**：amateur，在此之前学过「C 程序设计」课程
 - **学习时间**：2026 年寒假
-- **学习资料**：[《数据结构（C 语言描述）》也许是全站最良心最通俗易懂最好看的数据结构课（还在龟速更新~~）](https://www.bilibili.com/video/BV1tNpbekEht/)
+- **学习资料**：[《数据结构（C 语言描述）》也许是全站最良心最通俗易懂最好看的数据结构课（还在龟速更新~~）](https://www.bilibiliom/video/BV1tNpbekEht/)
 
 ## About
 
@@ -21,8 +21,10 @@
 
 ## Structure
 
-1. **链表**：`01_singly_linked_list.c`，`02_doubly_linked_list.c`
-2. **栈**：`03_stack_1.c`，`04_stack_2.c`，`05_stack_3.c`
-3. **队列**：`06_queue_1.c`，`07_queue_2.c`，`08_queue_3.c`，`09_enum.c`，`10_postfix_expression.c`，`11_infix_to_postfix.c`
-4. **树**：`12_double_pointer.c`，`13_binary_tree_1.c`，`14_binary_tree_2.c`，`15_threaded_binary_tree.c`，`16_level_order_traversal.c`
-5. **图**：`17_depth_first.c`，`18_breadth_first.c`，`19_mst_prim.c`，`20_mst_kruskal.c`，`21_dijkstra.c`，`22_floyd_warshall.c`，`23_topological_sorting.c`，`24_critical_path.c`
+1. **链表**：`01_singly_linked_list`，`02_doubly_linked_list`
+2. **栈**：`03_stack_1`，`04_stack_2`，`05_stack_3`
+3. **队列**：`06_queue_1`，`07_queue_2`，`08_queue_3`，`09_enum`，`10_postfix_expression`，`11_infix_to_postfix`
+4. **树**：`12_double_pointer`，`13_binary_tree_1`，`14_binary_tree_2`，`15_threaded_binary_tree`，`16_level_order_traversal`
+5. **图**：`17_depth_first`，`18_breadth_first`，`19_mst_prim`，`20_mst_kruskal`，`21_dijkstra`，`22_floyd_warshall`，`23_topological_sorting`，`24_critical_path`
+6. **查找**：`25_linear_search`，`26_binary_search`，`27_bst`
+7. **排序**：`28_bubble_sort`，`29_insertion_sort`，`30_binary_insertion_sort`，`31_selection_sort`

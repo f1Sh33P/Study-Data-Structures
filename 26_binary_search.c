@@ -1,6 +1,6 @@
 // 二分查找
 // 需要数据先排好序
-// 时间复杂度为 O(log₂n)
+// 时间复杂度为 O(log n)
 #include <stdio.h>
 
 int binarySearch(int *data, int len, int value) {
