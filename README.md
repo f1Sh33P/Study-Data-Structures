@@ -8,7 +8,7 @@
 - **学习时间**：2026 年寒假
 - **学习资料**：[《数据结构（C 语言描述）》也许是全站最良心最通俗易懂最好看的数据结构课（还在龟速更新~~）](https://www.bilibiliom/video/BV1tNpbekEht/)
 
-## About
+## Features
 
 1. **部分修改**：在视频代码的基础上，优化了变量名称、代码结构。
    - 能用缩写的，一律缩写。如 vertex 缩写为 vex，adjacency 缩写为 adj。
@@ -21,10 +21,10 @@
 
 ## Structure
 
-1. **链表**：`01_singly_linked_list`，`02_doubly_linked_list`
-2. **栈**：`03_stack_1`，`04_stack_2`，`05_stack_3`
-3. **队列**：`06_queue_1`，`07_queue_2`，`08_queue_3`，`09_enum`，`10_postfix_expression`，`11_infix_to_postfix`
-4. **树**：`12_double_pointer`，`13_binary_tree_1`，`14_binary_tree_2`，`15_threaded_binary_tree`，`16_level_order_traversal`
-5. **图**：`17_depth_first`，`18_breadth_first`，`19_mst_prim`，`20_mst_kruskal`，`21_dijkstra`，`22_floyd_warshall`，`23_topological_sorting`，`24_critical_path`
-6. **查找**：`25_linear_search`，`26_binary_search`，`27_bst`
-7. **排序**：`28_bubble_sort`，`29_insertion_sort`，`30_binary_insertion_sort`，`31_selection_sort`
+1. **链表**：`01-singly-linked-list`，`02-doubly-linked-list`
+2. **栈**：`03-stack-1`，`04-stack-2`，`05-stack-3`
+3. **队列**：`06-queue-1`，`07-queue-2`，`08-queue-3`，`09-enum`，`10-postfix-expression`，`11-infix-to-postfix`
+4. **树**：`12-double-pointer`，`13-binary-tree-1`，`14-binary-tree-2`，`15-threaded-binary-tree`，`16-level-order-traversal`
+5. **图**：`17-depth-first`，`18-breadth-first`，`19-mst-prim`，`20-mst-kruskal`，`21-dijkstra`，`22-floyd-warshall`，`23-topological-sorting`，`24-critical-path`
+6. **查找**：`25-linear-search`，`26-binary-search`，`27-bst`
+7. **排序**：`28-bubble-sort`，`29-insertion-sort`，`30-binary-insertion-sort`，`31-selection-sort`，`32-heapsort`
